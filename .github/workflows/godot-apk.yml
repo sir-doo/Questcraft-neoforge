@@ -22,7 +22,7 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - uses: android-actions/setup-android@v3
+      - uses: android-actions/setup-android@v4
       - name: Android SDK parts
         run: sdkmanager "platforms;android-34" "build-tools;34.0.0" "ndk;26.1.10909125"
       - uses: gradle/actions/setup-gradle@v4
